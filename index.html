@@ -195,7 +195,7 @@
 
   <h3>Account and Authentication Data</h3>
   <ul>
-    <li>Google sign-in email address (when you sign in with Google)</li>
+    <li>Email address used for one-time-password (OTP) sign-in</li>
     <li>Internal user ID</li>
     <li>Authentication and session tokens</li>
     <li>QR login token data used to sign in another device or session</li>
@@ -208,6 +208,14 @@
     <li>Firebase Cloud Messaging (FCM) token (for push command delivery)</li>
     <li>Basic app diagnostic logs</li>
   </ul>
+
+  <h3>Subscription and Purchase Verification Data</h3>
+  <ul>
+    <li>Google Play subscription product identifiers</li>
+    <li>Purchase token (stored to verify entitlement)</li>
+    <li>Subscription status and expiry metadata returned by verification services</li>
+  </ul>
+  <p>Subscription entitlement may be verified via backend services using Google Play Developer API.</p>
 
   <h3>Information and Persistent Identifiers We Collect Through Automatic Data Collection Technologies</h3>
   <p>As you navigate through and interact with our Application, we may use automatic data collection technologies to collect certain information about your equipment, browsing actions, and patterns, including:</p>
@@ -222,12 +230,6 @@
     <li>recognize you when you return to our Application.</li>
   </ul>
 
-  <p>The technologies we use for this automatic data collection may include:</p>
-  <ul>
-    <li><strong>Cookies (or browser cookies).</strong> A cookie is a small file placed on the hard drive of your computer or on your mobile device. You may refuse to accept browser cookies by activating the appropriate setting on your browser. However, if you select this setting you may be unable to access certain parts of our Application. Unless you have adjusted your browser setting so that it will refuse cookies, our system will issue cookies when you direct your browser to our Application.</li>
-    <li><strong>Flash Cookies.</strong> Certain features of our Application may use local stored objects (or Flash cookies) to collect and store information about your preferences and navigation to, from, and on our Application. Flash cookies are not managed by the same browser settings as are used for browser cookies.</li>
-    <li><strong>Web Beacons.</strong> Pages of our Application and our e-mails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company to count Users who have visited those pages or opened an email and for other related website statistics.</li>
-  </ul>
 
   <!-- HOW WE USE INFORMATION -->
   <h2>How We Use Information</h2>
@@ -267,7 +269,6 @@
 
   <p>We may also use your information to contact you about our own and third-parties' goods and services that may be of interest to you. If you do not want us to use your information in this way, notify us at <a href="mailto:accountservices@ParentGeenee.com">accountservices@ParentGeenee.com</a>. For more information, see the section titled Choices About How We Use and Disclose Your Information.</p>
 
-  <p>We may use the information we have collected from you to enable us to display advertisements to our advertisers' target audiences. Even though we do not disclose your personal information for these purposes without your consent, if you click on or otherwise interact with an advertisement, the advertiser may assume that you meet its target criteria.</p>
 
   <!-- DISCLOSURE -->
   <h2>Disclosure of Your Information</h2>
@@ -282,7 +283,7 @@
     <li>contractors, service providers and other third parties we use or work with to support our business, including:
       <ul>
         <li>Supabase (database, authentication, and server functions)</li>
-        <li>Google Sign-In (authentication)</li>
+        <li>Google Play Billing and Google Play Developer API (subscription entitlement verification)</li>
         <li>Firebase Cloud Messaging (push delivery)</li>
       </ul>
     </li>
@@ -308,12 +309,10 @@
 
   <p>We have created mechanisms to provide you with the following control over your information:</p>
   <ul>
-    <li><strong>Tracking Technologies and Advertising.</strong> You can set your browser to refuse all or some browser cookies or to alert you when cookies are being sent. If you disable or refuse cookies, please note that some parts of the Application may be inaccessible or not function properly.</li>
     <li><strong>App Permissions.</strong> You can revoke app permissions (including Accessibility Service and Camera) at any time through your Android device settings. Revoking required permissions may affect the functionality of the Application.</li>
     <li><strong>Promotional Offers from Us.</strong> If you do not wish to receive promotional offers from us or for third parties' products or services, you can opt-out by sending us an email stating your request to <a href="mailto:accountservices@ParentGeenee.com">accountservices@ParentGeenee.com</a>. If we have sent you a promotional email, you may send us a return email asking to be excluded from future email distributions. This opt-out feature does not apply to information provided to the Company in connection with your registration, a service experience or other transactions.</li>
   </ul>
 
-  <p>We do not control third parties' collection or use of your information to serve interest-based advertising. However, these third parties may provide you with ways to choose to not have your information collected or used in this way. You can opt out of receiving targeted ads from members of the Network Advertising Initiative ("NAI") on the NAI's website.</p>
 
   <!-- ACCESSING AND CORRECTING -->
   <h2>Accessing and Correcting Your Information</h2>
@@ -337,6 +336,7 @@
   <h2>Data Retention &amp; Processing</h2>
 
   <p>We will keep Personal Information for as long as we need it to make the Application available to you; and we may store, use and/or transmit Personal Information in locations around the world, including those outside your country. We keep data while your account is active, and for a limited period as needed for security, legal compliance, and service operations. Even if you delete your account, we will keep this information and any data collected regarding all activities in which you have already engaged pursuant to your use of the Application for a period of time as we deem appropriate but no longer than as allowed by applicable law. When you request deletion, we delete or anonymize data unless retention is legally required.</p>
+  <p>When you request account deletion, we remove or anonymize account data and linked device records unless retention is legally required or needed for fraud/security prevention.</p>
 
   <!-- CHANGES -->
   <h2>Changes to Our Privacy Policy</h2>
